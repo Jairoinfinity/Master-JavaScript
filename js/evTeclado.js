@@ -7,3 +7,8 @@ texto.addEventListener("focus", function() {
 texto.addEventListener("blur", function() {
     console.log("No tiene el foco.");
 });
+
+texto.addEventListener("keyup", function(event) {
+    var codigo = event.keyCode;
+    console.log("Tecla: " + String.fromCharCode(codigo) + " Codigo: " + codigo);
+});
